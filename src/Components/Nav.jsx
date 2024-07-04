@@ -9,13 +9,13 @@ export default function Nav() {
           <img src="/images/logo.png" alt="" />
       </a>
       <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse items-center gap-6">
-          <div className="mt-1">
+          <div className="mt-1"> 
             <img src="/images/search.png" alt="" />
           </div>
           <div className="">
             <img src="/images/keranjang.png" alt="" />
           </div>
-          <button type="button" className="flex gap-2 items-center  bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm px-7 py-3 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 text-white"> 
+          <button type="button" className="hidden md:flex gap-2 items-center  bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm px-7 py-3 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 text-white"> 
             <span><img src="/images/login.png" alt="" /></span>
             Login</button>
           <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
@@ -27,17 +27,20 @@ export default function Nav() {
       </div>
       <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white   dark:border-gray-700">
+          <l>
+            <a to="#" className="block py-2 px-3 rounded md:bg-transparent md:text-red-500 md:p-0" aria-current="page">Home</a>
+          </l>
           <li>
-            <Link to="#" className="block py-2 px-3 rounded md:bg-transparent md:text-red-500 md:p-0" aria-current="page">Home</Link>
+            <a to="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:  dark:hover:bg-gray-700 dark:hover:  md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
           </li>
           <li>
-            <Link to="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:  dark:hover:bg-gray-700 dark:hover:  md:dark:hover:bg-transparent dark:border-gray-700">Services</Link>
+            <a to="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:  dark:hover:bg-gray-700 dark:hover:  md:dark:hover:bg-transparent dark:border-gray-700">Menu</a>
           </li>
           <li>
-            <Link to="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:  dark:hover:bg-gray-700 dark:hover:  md:dark:hover:bg-transparent dark:border-gray-700">Menu</Link>
+            <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:  dark:hover:bg-gray-700 dark:hover:  md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
           </li>
           <li>
-            <Link href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:  dark:hover:bg-gray-700 dark:hover:  md:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
+            <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:  dark:hover:bg-gray-700 dark:hover:  md:dark:hover:bg-transparent dark:border-gray-700 md:hidden flex">Login</a>
           </li>
         </ul>
       </div>

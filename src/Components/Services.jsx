@@ -21,7 +21,7 @@ export default function Services() {
         </h1>
       </div>
 
-      <div className="flex justify-center">
+      <div className="w-full flex-wrap items-center md:flex justify-center">
        <ServiceItem
         imageSrc="/images/service-1.png"
         title="Easy To Order"
